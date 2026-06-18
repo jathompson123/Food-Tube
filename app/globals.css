@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  .tube-btn {
+    @apply inline-flex items-center justify-center rounded-full font-bold uppercase tracking-widest transition-all duration-200 active:scale-95;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
